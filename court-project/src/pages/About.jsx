@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import gsap from "gsap";
-import Navbar from "../components/NavBar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { courtsData } from "../data/courtsData";
 

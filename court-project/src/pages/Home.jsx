@@ -1,7 +1,7 @@
 // Home.jsx
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/NavBar';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { courtsData } from '../data/courtsData';
 import gsap from 'gsap';

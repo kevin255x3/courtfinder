@@ -1,5 +1,4 @@
-// App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from './context/ThemeContext';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
@@ -11,7 +10,7 @@ import Legal from './pages/Legal';
 function App() {
   return (
     <ThemeProvider>
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/home" element={<Home />} />
@@ -20,7 +19,7 @@ function App() {
           <Route path="/notes" element={<Notes />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
